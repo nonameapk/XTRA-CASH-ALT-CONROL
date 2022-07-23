@@ -496,7 +496,7 @@ local function Initiate()
 					wait(1)
 					setfpscap(60)	
 				end
-			elseif Args[1] == ".stopdrop" then
+			elseif Args[1] == ".stop" then
 				Drop(false)
 			elseif Args[1] == ".reset" then
 				if Variables["Player"].Character then
@@ -510,7 +510,7 @@ local function Initiate()
 				Initiate()
 			elseif Args[1] == ".airlock" then
 				AirLock(true)
-			elseif Args[1] == ".stopairlock" then
+			elseif Args[1] == ".unairlock" then
 				AirLock(false)
 			elseif Message == ".bring" then
 				-- didnt feel the need for a function lmao
@@ -533,15 +533,15 @@ local function Initiate()
 				Setup("Bank")
 			elseif Message == ".setup admin" then
 				Setup("Admin")
-			elseif Message == ".setup klub" then
+			elseif Message == ".setup club" then
 				Setup("Klub")
 			elseif Message == ".setup vault" then
 				Setup("Vault")
 			elseif Message == ".setup train" then
 				Setup("Train")
-			elseif Message == ".wallet on" then
+			elseif Message == ".wallet" then
 				ShowWallet()
-			elseif Message == ".wallet off" then
+			elseif Message == ".unwallet" then
 				RemoveWallet()
 			elseif Message == ".dolphin" then
 				if CurrAnim and CurrAnim.IsPlaying then
